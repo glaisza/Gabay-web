@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order GABAY Smart Cane | TechTalk</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/order.css">
+</head>
+
+<body>
+
+    <!-- SUCCESS OVERLAY -->
+    <div class="success-overlay" id="successOverlay">
+        <div class="success-box">
+            <div class="success-icon"><i class="fa-solid fa-circle-check"></i></div>
+            <h3>Order Placed!</h3>
+            <p>Thank you for ordering the GABAY Smart Cane. We'll reach out within 24–48 hours to confirm your order and
+                delivery details.</p>
+            <div class="success-ref" id="orderRef">Order #GABAY-00000</div>
+            <button class="btn-close-success"
+                onclick="document.getElementById('successOverlay').classList.remove('show')">Back to Page</button>
+        </div>
+    </div>
+
+    <!-- NAV -->
+    <nav>
+        <a href="index.html" class="nav-logo">
+            <img src="images/GABAY_Logo.png" alt="GABAY Logo" class="nav-logo-img">
+            <span>GABAY</span>
+        </a>
+        <a href="index.html" class="nav-back">← Back to Home</a>
+    </nav>
+
+    <!-- ======== PRODUCT HERO ======== -->
+    <div class="product-wrapper">
+        <section id="product-hero">
+
+            <!-- LEFT: Text -->
+            <div class="ph-left">
+
+
+                <h1>GABAY<br><em>Smart Cane</em></h1>
+
+                <p class="ph-desc">
+                    More than just a cane — GABAY is an intelligent navigation companion with real-time obstacle
+                    detection,
+                    voice guidance, and a caregiver web interface. Designed for independence.
+                </p>
+
+                <div class="price-block">
+                    <div class="price-main">₱4,999</div>
+                </div>
+
+                <div class="ph-actions">
+                    <a href="#order" class="btn-order">Order Now →</a>
+                    <a href="#key-features" class="btn-ghost">See Features</a>
+                </div>
+            </div>
+
+            <!-- RIGHT: Product Image -->
+            <img src="images/Cane.png" alt="Smart Cane" class="hero-image">
+
+        </section>
+    </div>
+    <!-- ======== KEY FEATURES ======== -->
+    <section id="key-features">
+        <div class="kf-wrap">
+            <div class="section-label">Key Features</div>
+
+            <div class="kf-grid">
+                <div class="kf-card">
+                    <div class="kf-icon ki1"> <i class="fa-solid fa-tower-broadcast"></i></div>
+
+                    <div class="kf-text">
+                        <h3>Ultrasonic Detection</h3>
+                        <p>Detects obstacles in real-time</p>
+                    </div>
+                </div>
+                <div class="kf-card">
+                    <div class="kf-icon ki2"> <i class="fa-solid fa-volume-high"></i></div>
+                    <div class="kf-text">
+                        <h3>Voice Guidance</h3>
+                        <p>Audio navigation assistance</p>
+                    </div>
+                </div>
+                <div class="kf-card">
+                    <div class="kf-icon ki3"><i class="fa-solid fa-wave-square"></i></div>
+                    <div class="kf-text">
+                        <h3>Vibration</h3>
+                        <p>Instant alerts through touch</p>
+                    </div>
+                </div>
+                <div class="kf-card">
+                    <div class="kf-icon ki4"> <i class="fa-solid fa-feather"></i></div>
+                    <div class="kf-text">
+                        <h3>Lightweight Design</h3>
+                        <p>Comfortable for daily use</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== ORDER SECTION ======== -->
+    <section id="order">
+
+        <div class="order-wrap">
+            <div class="order-top">
+                <div class="order-label">Place Your Order</div>
+                <h2>Empowering Independence</h2>
+                <p class="order-intro">The GABAY Smart Cane is more than a device—it’s a companion that
+                    helps<br>visually impaired individuals move with confidence, safety, and freedom.</p>
+            </div>
+
+            <div class="order-grid">
+
+                <!-- FORM -->
+                <div class="order-form-wrap">
+
+                    <!-- Personal Info -->
+                    <div class="form-section-title">Personal Information</div>
+                    <div class="form-row">
+                        <div class="fg">
+                            <label>Full Name <span class="req">*</span></label>
+                            <input type="text" id="fullName" placeholder="Juan Dela Cruz" required>
+                        </div>
+                        <div class="fg">
+                            <label>Contact Number <span class="req">*</span></label>
+                            <input type="tel" id="contactNum" placeholder="09XX XXX XXXX" required>
+                        </div>
+                    </div>
+                    <div class="form-row full">
+                        <div class="fg">
+                            <label>Email Address <span class="req">*</span></label>
+                            <input type="email" id="emailAddr" placeholder="juan@email.com" required>
+                        </div>
+                    </div>
+
+                    <!-- Delivery Info -->
+                    <div class="form-section-title">Delivery Details</div>
+                    <div class="form-row full">
+                        <div class="fg">
+                            <label>Street Address / Barangay <span class="req">*</span></label>
+                            <input type="text" id="street" placeholder="House No., Street, Barangay" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="fg">
+                            <label>City / Municipality <span class="req">*</span></label>
+                            <input type="text" id="city" placeholder="Panabo City" required>
+                        </div>
+                        <div class="fg">
+                            <label>Province <span class="req">*</span></label>
+                            <input type="text" id="province" placeholder="Davao del Norte" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="fg">
+                            <label>Region</label>
+                            <select id="region">
+                                <option value="">Select Region</option>
+                                <option>Region XI – Davao Region</option>
+                                <option>Region X – Northern Mindanao</option>
+                                <option>NCR – Metro Manila</option>
+                                <option>Region III – Central Luzon</option>
+                                <option>Region IV-A – CALABARZON</option>
+                                <option>Region VII – Central Visayas</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="fg">
+                            <label>ZIP Code</label>
+                            <input type="text" id="zip" placeholder="8105">
+                        </div>
+                    </div>
+                    <div class="form-row full">
+                        <div class="fg">
+                            <label>Delivery Notes (optional)</label>
+                            <textarea id="notes"
+                                placeholder="Landmark, special instructions, preferred delivery time..."></textarea>
+                        </div>
+                    </div>
+
+                    <!-- Order Details -->
+                    <div class="form-section-title">Order Details</div>
+                    <div class="form-row">
+                        <div class="fg">
+                            <label>Quantity <span class="req">*</span></label>
+                            <div class="qty-control">
+                                <button class="qty-btn" onclick="changeQty(-1)" type="button">−</button>
+                                <div class="qty-display" id="qtyDisplay">1</div>
+                                <button class="qty-btn" onclick="changeQty(1)" type="button">+</button>
+                            </div>
+                        </div>
+                        <div class="fg">
+                            <label>Color Variant</label>
+                            <select id="colorVar">
+                                <option value="matte-black">Matte Black</option>
+                                <option value="navy-blue">Navy Blue</option>
+                                <option value="silver">Silver</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <button class="btn-place-order" onclick="placeOrder()">
+                        Place Order →
+                    </button>
+                    <p class="form-note">By placing an order you agree to our terms. Our team will contact you to
+                        confirm within 24–48 hours.</p>
+                </div>
+
+                <!-- ORDER SUMMARY -->
+                <div class="summary-card" id="summaryCard">
+                    <div class="summary-header">
+                        <h3>Order Summary</h3>
+                        <span class="summary-badge" id="summaryQtyBadge">× 1</span>
+                    </div>
+
+                    <div class="summary-product">
+                        <div class="summary-img-box"><i class="fa-solid fa-cart-shopping"></i></div>
+                        <div class="summary-product-info">
+                            <h4>GABAY Smart Cane</h4>
+                            <p>TechTalk</p>
+                            <p id="summaryColor" style="color:var(--accent);font-size:0.78rem;margin-top:2px;">Matte
+                                Black</p>
+                        </div>
+                        <div class="summary-qty-badge" id="summaryQty">×1</div>
+                    </div>
+
+                    <div class="summary-pricing">
+                        <div class="price-row">
+                            <span>Unit price</span>
+                            <span>₱4,999.00</span>
+                        </div>
+                        <div class="price-row">
+                            <span>Quantity</span>
+                            <span id="summaryQtyLine">× 1</span>
+                        </div>
+                        <div class="price-row">
+                            <span>Subtotal</span>
+                            <span id="summarySubtotal">₱4,999.00</span>
+                        </div>
+                        <div class="price-row">
+                            <span>Shipping</span>
+                            <span>₱100.00</span>
+                        </div>
+                        <div class="card-divider"></div>
+                        <div class="price-row total">
+                            <span>Total</span>
+                            <span id="summaryTotal">₱5,099.00</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-wrap">
+
+            <!-- COL 1: Brand -->
+            <div class="footer-brand">
+                <a href="#home" class="nav-logo">
+                    <img src="../images/GABAY_Logo.png" alt="GABAY Logo" class="nav-logo-img">
+                    <span>GABAY</span>
+                </a>
+                <p class="footer-phrase">Doesn’t just lead the way, it redefines it.
+                    Your Guide Beyond Sight.</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-icon" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="X / Twitter">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- COL 2: Quick Links -->
+            <div class="footer-col">
+                <h4 class="footer-col-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#product">Product</a></li>
+                    <li><a href="index.html#market">Target Users</a></li>
+                    <li><a href="index.html#value">Why GABAY</a></li>
+                    <li><a href="index.html#testimonials">Testimonials</a></li>
+                    <li><a href="index.html#faq">FAQ</a></li>
+                    <li><a href="order.html">Order Now</a></li>
+                </ul>
+            </div>
+
+            <!-- COL 3: Location -->
+            <div class="footer-col">
+                <h4 class="footer-col-title">Location</h4>
+                <div class="footer-location">
+                    <div class="footer-loc-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <p>Panabo City, Davao del
+                        Norte<br>Philippines, 8105</p>
+                </div>
+                <div class="footer-map-badge">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    Region XI – Davao Region
+                </div>
+            </div>
+
+            <!-- COL 4: Contact -->
+            <div class="footer-col">
+                <h4 class="footer-col-title">Contact Us</h4>
+                <ul class="footer-contact-list">
+                    <li>
+                        <div class="fc-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <span class="fc-label">Email</span>
+                            <a href="mailto:techtalk.gabay@dnsc.edu.ph">techtalk.gabay@dnsc.edu.ph</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="fc-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <span class="fc-label">Phone</span>
+                            <a href="tel:+63XXXXXXXXXX">+63 (9XX) XXX-XXXX</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="fc-icon">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <div>
+                            <span class="fc-label">Office Hours</span>
+                            <span>Mon – Fri, 8:00 AM – 5:00 PM</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-inner">
+                <p>© 2026 <strong>TechTalk</strong> · GABAY Smart Cane · Panabo City, Davao del Norte · All rights
+                    reserved.</p>
+
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const UNIT_PRICE = 4999;
+        const SHIPPING = 100;
+        let qty = 1;
+
+        function changeQty(delta) {
+            qty = Math.max(1, Math.min(20, qty + delta));
+            document.getElementById('qtyDisplay').textContent = qty;
+            document.getElementById('summaryQty').textContent = '×' + qty;
+            document.getElementById('summaryQtyBadge').textContent = '× ' + qty;
+            document.getElementById('summaryQtyLine').textContent = '× ' + qty;
+            const sub = UNIT_PRICE * qty;
+            const total = sub + SHIPPING;
+            document.getElementById('summarySubtotal').textContent = '₱' + sub.toLocaleString('en-PH', { minimumFractionDigits: 2 });
+            document.getElementById('summaryTotal').textContent = '₱' + total.toLocaleString('en-PH', { minimumFractionDigits: 2 });
+        }
+
+        document.getElementById('colorVar').addEventListener('change', function () {
+            const labels = { 'matte-black': 'Matte Black', 'navy-blue': 'Navy Blue', 'silver': 'Silver' };
+            document.getElementById('summaryColor').textContent = labels[this.value] || this.value;
+        });
+
+        function placeOrder() {
+            const required = ['fullName', 'contactNum', 'emailAddr'];
+            let valid = true;
+            required.forEach(id => {
+                const el = document.getElementById(id);
+                if (!el.value.trim()) {
+                    el.style.borderColor = 'rgba(255,107,53,0.7)';
+                    el.style.background = 'rgba(255,107,53,0.06)';
+                    valid = false;
+                    setTimeout(() => {
+                        el.style.borderColor = '';
+                        el.style.background = '';
+                    }, 2500);
+                }
+            });
+            if (!valid) {
+                alert('Please fill in all required fields marked with *');
+                return;
+            }
+            const ref = 'GABAY-' + Date.now().toString().slice(-5);
+            document.getElementById('orderRef').textContent = 'Order #' + ref;
+            document.getElementById('successOverlay').classList.add('show');
+        }
+    </script>
+</body>
+
+</html>

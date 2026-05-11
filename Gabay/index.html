@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GABAY — Smart Cane Navigation System | TechTalk</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+    <!--------------------------- NAV --------------------------->
+    <nav id="navbar">
+        <a href="#home" class="nav-logo">
+            <img src="images/GABAY_Logo.png" alt="GABAY Logo" class="nav-logo-img">
+            <span>GABAY</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#product">Product</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="order.html" class="nav-cta">Order Now</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+
+    <!--------------------------- HOME --------------------------->
+    <div class="hero-wrapper">
+        <section id="home">
+
+            <div class="hero-grid-bg"></div>
+            <div class="hero-blob blob1"></div>
+            <div class="hero-blob blob2"></div>
+            <div class="hero-content">
+                <div class="hero-tag">TechTalk — DNSC, Panabo City</div>
+                <h1><span class="hero-subtitle">Meet</span> <em>GABAY</em><br> <span class="hero-subtitle">Your Guide
+                        Beyond Sight</span></h1>
+                <p class="hero-sub">In a world built for the seen, GABAY is here for the unseen paths. More than just a
+                    cane, GABAY is a smart companion designed to empower movement, confidence, and independence. </p>
+
+                <img src="images/Canee.png" alt="Smart Cane" class="hero-image">
+                <div class="hero-actions">
+                    <a href="#product" class="btn-primary">Explore →</a>
+                    <a href="#contact" class="btn-outline">Get in Touch</a>
+                </div>
+                <div class="hero-stats-card">
+
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-num">2.2<span>B</span></div>
+                            <div class="stat-label">People with vision impairment globally</div>
+                        </div>
+
+                        <div class="stat">
+                            <div class="stat-num">360°</div>
+                            <div class="stat-label">Real-time obstacle awareness</div>
+                        </div>
+
+                        <div class="stat">
+                            <div class="stat-num">SDG <span>3</span></div>
+                            <div class="stat-label">Good Health & Well-Being</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!--------------------------- PRODUCT --------------------------->
+    <section id="product">
+        <div class="section-wrap">
+            <div class="section-label reveal">Product</div>
+            <h2 class="reveal">Features of GABAY Smartcane</h2>
+            <p class="section-intro reveal">GABAY transforms the traditional white cane into an intelligent,
+                sensor-driven navigation assistant — paired with a web interface for caregivers and users alike.</p>
+            <div class="product-layout">
+                <div class="product-image-box">
+                    <img src="images/Cane.png" alt="Smart Cane" class="product-image">
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card reveal">
+                        <div class="feature-icon"><i class="fa-solid fa-satellite-dish"></i></i></div>
+                        <h3> Intelligent Obstacle Detection</h3>
+                        <p>Uses advanced sensors to detect obstacles in real time.
+                    </div>
+                    <div class="feature-card reveal">
+                        <div class="feature-icon"><i class="fa-solid fa-hand"></i></div>
+                        <h3> Adaptive Haptic Feedback</h3>
+                        <p>Communicates through vibration patterns, allowing users to “feel” their surroundings
+                    </div>
+
+                    <div class="feature-card reveal">
+                        <div class="feature-icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <h3>GPS Navigation Support</h3>
+                        <p>Outdoor navigation is powered by GPS, allowing route planning for familiar and unfamiliar
+                            environments.</p>
+                    </div>
+
+                    <div class="feature-card reveal">
+                        <div class="feature-icon"><i class="fa-solid fa-battery-full"></i></div>
+                        <h3> Standalone Operation</h3>
+                        <p>Core obstacle detection and navigation work fully offline — no internet required. The
+                            cane
+                            operates standalone even without the web interface connected.</p>
+                    </div>
+
+                    <div class="feature-card reveal">
+                        <div class="feature-icon"><i class="fa-solid fa-globe"></i></div>
+                        <h3>Companion Web Interface</h3>
+                        <p>Caregivers and users can input destinations, view routes, and optionally monitor location
+                            —
+                            all
+                            through a clean, accessible web-based dashboard via BLE or Wi-Fi.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--------------------------- ABOUT --------------------------->
+    <section id="about">
+
+        <div class="section-wrap">
+
+            <!-- TOP GRID -->
+            <div class="about-grid">
+
+                <!-- LEFT -->
+                <div class="about-text-block reveal">
+
+                    <div class="section-label">
+                        About Us
+                    </div>
+
+                    <div class="about-slider">
+
+                        <!-- TOP ROW: title + arrows -->
+                        <div class="about-slider-header">
+                            <h2 class="about-title">
+                                Built by students, for the community
+                            </h2>
+
+                            <div class="about-slider-controls">
+                                <button onclick="showAbout('text1')">←</button>
+                                <button onclick="showAbout('text2')">→</button>
+                            </div>
+                        </div>
+
+                        <!-- SLIDER TEXT -->
+                        <p class="about-text active" id="text1">
+                            We are a team driven by one simple belief: technology should include everyone.
+
+                            GABAY was created to bridge the gap between innovation and accessibility, giving visually
+                            impaired individuals the freedom to navigate the world with confidence and dignity.
+                        </p>
+
+                        <p class="about-text" id="text2">
+                            By combining smart technology with purposeful design, we aim to turn everyday challenges
+                            into
+                            opportunities for independence. GABAY is not just a product, it’s a step toward a more
+                            inclusive future, where no one is left behind.
+                        </p>
+
+                    </div>
+
+
+                    <!-- MISSION VISION -->
+                    <div class="mv-box">
+
+                        <!-- TABS -->
+                        <div class="mv-tabs">
+                            <button class="mv-tab active" onclick="showMV('mission', this)">
+                                Mission
+                            </button>
+
+                            <button class="mv-tab" onclick="showMV('vision', this)">
+                                Vision
+                            </button>
+                        </div>
+
+                        <!-- MISSION -->
+                        <div class="mv-content active" id="mission">
+
+                            <div class="mv-header">
+                                <div class="mv-icon">
+                                    <i class="fa-solid fa-bullseye"></i>
+                                </div>
+
+                                <h4>
+                                    Mission
+                                </h4>
+                            </div>
+
+                            <p>
+                                To develop affordable, IoT-powered assistive
+                                technology that promotes safe, independent
+                                mobility for visually impaired individuals.
+                            </p>
+
+                        </div>
+
+                        <!-- VISION -->
+                        <div class="mv-content" id="vision">
+
+                            <div class="mv-header">
+                                <div class="mv-icon">
+                                    <i class="fa-solid fa-eye"></i>
+                                </div>
+
+                                <h4>
+                                    Vision
+                                </h4>
+                            </div>
+
+                            <p>
+                                A world where every visually impaired person
+                                can navigate their surroundings safely and
+                                confidently with the help of smart technology.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- RIGHT PHOTO -->
+                <div class="about-photo-wrap reveal">
+
+                    <img src="images/team.jpg" alt="About GABAY" class="about-photo">
+
+
+                    <!-- ABOUT CARDS -->
+                    <div class="about-floating-card reveal">
+                        <div class="about-rotating-card">
+                            <div class="about-slide active">
+                                <i class="fa-solid fa-heart"></i>
+                                <h4>Human-Centered Innovation</h4>
+                            </div>
+
+                            <div class="about-slide">
+                                <i class="fa-solid fa-layer-group"></i>
+                                <h4>Balanced Skill Set</h4>
+                            </div>
+
+                            <div class="about-slide">
+                                <i class="fa-solid fa-bullseye"></i>
+                                <h4>Purpose Driven</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- TEAM HEADER -->
+            <div class="header reveal">
+                <h3>Our Team</h3>
+            </div>
+
+            <!-- TEAM ROW -->
+            <div class="team-row reveal">
+
+                <div class="team-pill">
+
+                    <div class="team-avatar">
+                        <img src="images/regine.jpg" alt="Regine Kris Cadiao">
+                    </div>
+
+                    <div class="team-info">
+                        <div class="team-name">
+                            Regine Kris Cadiao
+                        </div>
+
+                        <div class="team-role">
+                            Project Manager
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="team-pill">
+
+                    <div class="team-avatar">
+                        <img src="images/glaisa.jpg" alt="Glaisa Mae Curato">
+                    </div>
+
+                    <div class="team-info">
+                        <div class="team-name">
+                            Glaisa Mae Curato
+                        </div>
+
+                        <div class="team-role">
+                            Project Analyst / Designer
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="team-pill">
+
+                    <div class="team-avatar">
+                        <img src="images/mariel.jpg" alt="Mariel Joyce Batulanon">
+                    </div>
+
+                    <div class="team-info">
+                        <div class="team-name">
+                            Mariel Joyce Batulanon
+                        </div>
+
+                        <div class="team-role">
+                            Programmer
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!--------------------------- VALUE PROPOSITION --------------------------->
+    <section id="value">
+        <div class="section-wrap">
+            <div class="section-label reveal">Value Proposition</div>
+            <h2 class="reveal">Why GABAY stands apart</h2>
+            <p class="section-intro reveal">Most smart navigation aids are expensive and designed for foreign
+                environments. GABAY is built locally, priced affordably, and tested in real Philippine conditions.</p>
+            <div class="value-grid reveal">
+                <div class="value-item">
+                    <div class="value-num">01</div>
+                    <h3>Locally Adapted</h3>
+                    <p>Developed and tested in Philippine environments — roads, weather, and terrain that other foreign
+                        products weren't designed for.</p>
+                </div>
+                <div class="value-item">
+                    <div class="value-num">02</div>
+                    <h3>Affordable & Accessible</h3>
+                    <p>A low-cost alternative to expensive international assistive tech, designed to be accessible to
+                        families across all income levels.</p>
+                </div>
+                <div class="value-item">
+                    <div class="value-num">03</div>
+                    <h3>Holistic Safety System</h3>
+                    <p>From obstacle detection to caregiver monitoring — GABAY covers the full spectrum of mobility
+                        safety in one integrated device.</p>
+                </div>
+                <div class="value-item">
+                    <div class="value-num">04</div>
+                    <h3>Independence-First</h3>
+                    <p>Designed to empower users to move on their own — not just to alert others. The cane is a personal
+                        navigation assistant, not just a tracker.</p>
+                </div>
+                <div class="value-item">
+                    <div class="value-num">05</div>
+                    <h3>SDG-Aligned</h3>
+                    <p>Directly supports SDG 3 (Good Health) and SDG 10 (Reduced Inequalities) — building technology
+                        that has a measurable social impact.</p>
+                </div>
+                <div class="value-item">
+                    <div class="value-num">06</div>
+                    <h3>Offline Capable</h3>
+                    <p>Unlike app-based solutions, GABAY's core functions work without internet — crucial in areas with
+                        inconsistent connectivity.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--------------------------- TARGET MARKET --------------------------->
+    <section id="market">
+        <div class="section-wrap">
+            <div class="section-label reveal">Target Users</div>
+            <h2 class="reveal">Who GABAY serves</h2>
+            <p class="section-intro reveal">Designed with two key groups in mind — those who use the cane and those who
+                care for them.</p>
+
+            <div class="market-grid reveal">
+
+                <!-- CARD 1 -->
+                <div class="market-card card-primary">
+                    <div class="card-deco"></div>
+                    <div class="card-deco-2"></div>
+                    <div class="card-icon icon-blue">
+                        <i class="fa-solid fa-eye"></i>
+                    </div>
+                    <h3>Visually Impaired Individuals</h3>
+                    <p>People who navigate daily environments with limited or no sight — GABAY's core users.</p>
+                    <div class="card-divider"></div>
+                    <ul>
+                        <li>Adults with partial or total vision loss</li>
+                        <li>Urban and semi-urban users across the Philippines</li>
+                        <li>Independent or semi-independent travelers</li>
+                        <li>White cane users seeking a smarter alternative</li>
+                        <li>Those needing real-time, hands-free guidance</li>
+                    </ul>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="market-card card-secondary">
+                    <div class="card-deco"></div>
+                    <div class="card-deco-2"></div>
+                    <div class="card-icon icon-green">
+                        <i class="fa-solid fa-hand-holding-heart"></i>
+                    </div>
+                    <h3>Caregivers & Family Members</h3>
+                    <p>Secondary users of the companion web interface who support and monitor loved ones.</p>
+                    <div class="card-divider"></div>
+                    <ul>
+                        <li>Parents and family members</li>
+                        <li>Professional caregivers and social workers</li>
+                        <li>School and institution support staff</li>
+                        <li>Healthcare workers monitoring mobility</li>
+                        <li>Organizations aligned with SDG 3 & SDG 10</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!--------------------------- TESTIMONIALS --------------------------->
+    <section id="testimonials">
+        <div class="section-wrap">
+            <div class="section-label reveal">Testimonials</div>
+            <h2 class="reveal">What people are saying</h2>
+            <p class="section-intro reveal">Early feedback from our pilot evaluation sessions with visually impaired
+                individuals and their caregivers.</p>
+            <div class="testimonial-grid reveal">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"For the first time in years, I felt genuinely confident walking on my own. The vibration alerts
+                        gave me just enough warning to avoid obstacles without feeling overwhelmed."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">RL</div>
+                        <div>
+                            <div class="author-name">Rodrigo L.</div>
+                            <div class="author-role">GABAY Pilot User, Malabon</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"As a caregiver, being able to see her location and route on the web interface was such a relief.
+                        I could give her independence while still knowing she was safe."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">AM</div>
+                        <div>
+                            <div class="author-name">Analiza M.</div>
+                            <div class="author-role">Caregiver, Pilot Program</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★☆</div>
+                    <p>"Impressive how much the team packed into such a compact device. The voice feedback was clear and
+                        the companion interface was easy to use, even for non-tech people."</p>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">JP</div>
+                        <div>
+                            <div class="author-name">James P.</div>
+                            <div class="author-role">Faculty Evaluator, DNSC</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--------------------------- FAQs --------------------------->
+    <section id="faq" style="background: white;">
+        <div class="section-wrap">
+            <div class="section-label reveal">FAQ</div>
+            <h2 class="reveal">Frequently Asked Questions</h2>
+            <p class="section-intro reveal">Have questions about GABAY? Here are the most common ones we hear.</p>
+            <div class="faq-list reveal">
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">Does GABAY work without internet?
+                        <span>+</span></button>
+                    <div class="faq-a">Yes. The core functions — obstacle detection, haptic feedback, and voice guidance
+                        — work fully offline. The internet is only needed for the companion web interface's location
+                        monitoring and route input features.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">How does the caregiver interface work?
+                        <span>+</span></button>
+                    <div class="faq-a">Caregivers access a web-based dashboard through any browser. They can input the
+                        user's destination, view the planned route, and optionally monitor the user's GPS location in
+                        real time. The cane connects via BLE or Wi-Fi.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">What happens if GPS signal is weak?
+                        <span>+</span></button>
+                    <div class="faq-a">GPS accuracy can be affected by tall buildings or signal interference. In such
+                        cases, the smart cane's obstacle detection still operates fully. Route guidance may be less
+                        precise but core safety features remain unaffected.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">Is GABAY affordable for Filipino families?
+                        <span>+</span></button>
+                    <div class="faq-a">Yes. Affordability was a primary design goal. GABAY uses locally-sourced,
+                        low-cost components to create a practical alternative to expensive imported assistive
+                        technology.</div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-q" onclick="toggleFaq(this)">How long does the battery last?
+                        <span>+</span></button>
+                    <div class="faq-a">Battery life depends on active features (GPS, BLE, camera). We are currently
+                        optimizing power consumption for typical daily use scenarios. The device is rechargeable via
+                        USB.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--------------------------- CONTACT --------------------------->
+    <section id="contact">
+        <div class="section-wrap">
+
+            <div class="section-label reveal">Contact</div>
+
+            <h2 class="reveal">Get in touch with TechTalk</h2>
+
+            <p class="section-intro reveal">
+                Have questions, want a demo, or interested in collaborating?
+                We'd love to hear from you.
+            </p>
+
+            <!-- TOP LAYOUT -->
+            <div class="contact-wrap reveal">
+
+                <!-- LEFT PHOTO -->
+                <div class="contact-photo-box">
+                    <img src="images/contact-photo.PNG" alt="TechTalk Team" class="contact-photo">
+
+                    <div class="contact-photo-overlay">
+                        <h3>Let's Build Smarter Mobility Together</h3>
+                        <p>
+                            Reach out to TechTalk for collaborations,
+                            product demonstrations, and research inquiries.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- RIGHT FORM -->
+                <form class="contact-form" onsubmit="handleSubmit(event)">
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>First Name</label>
+                            <input type="text" placeholder="Juan" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label>Last Name</label>
+                            <input type="text" placeholder="Dela Cruz" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email Address</label>
+                        <input type="email" placeholder="juan@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Inquiry Type</label>
+
+                        <select>
+                            <option value="">Select a topic</option>
+                            <option value="demo">Product Demo</option>
+                            <option value="collab">Collaboration</option>
+                            <option value="research">Research Inquiry</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Message</label>
+                        <textarea placeholder="Tell us how we can help you..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-submit">
+                        Send Message →
+                    </button>
+
+                    <div class="form-success" id="formSuccess">
+                        ✅ Message sent! We'll get back to you within 24–48 hours.
+                    </div>
+
+                </form>
+            </div>
+
+            <!-- BOTTOM CONTACT CARDS -->
+            <div class="contact-cards reveal">
+
+                <div class="contact-card">
+                    <div class="contact-card-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="contact-card-text">
+                        <p>Panabo City, Davao del Norte<br>Send us your questions anytime.</p>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-card-icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="contact-card-text">
+                        <p><a href="mailto:techtalk@gmail.com">techtalk@gmail.com</a><br>We reply within 24–48 hours.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-card-icon"><i class="fa-solid fa-phone"></i></div>
+                    <div class="contact-card-text">
+                        <p>+63 912 345 6789<br>Call us for quick assistance.</p>
+                    </div>
+                </div>
+
+                <div class="contact-card">
+                    <div class="contact-card-icon"><i class="fa-solid fa-clock"></i></div>
+                    <div class="contact-card-text">
+                        <p>Mon – Fri<br>8:00 AM – 5:00 PM</p>
+                    </div>
+                </div>
+
+                <div class="contact-bottom">
+                    <p>We are committed to accessibility. If you need assistance
+                        navigating this page or contacting us,please call or email us directly.</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-wrap">
+
+            <!-- COL 1: Brand -->
+            <div class="footer-brand">
+                <a href="#home" class="nav-logo">
+                    <img src="images/GABAY_Logo.png" alt="GABAY Logo" class="nav-logo-img">
+                    <span>GABAY</span>
+                </a>
+                <p class="footer-phrase">Doesn’t just lead the way, it redefines it.
+                    Your Guide Beyond Sight.</p>
+                <div class="footer-socials">
+                    <a href="#" class="social-icon" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="X / Twitter">
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </a>
+                    <a href="#" class="social-icon" aria-label="LinkedIn">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- COL 2: Quick Links -->
+            <div class="footer-col">
+                <h4 class="footer-col-title">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html#home">Home</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                    <li><a href="index.html#product">Product</a></li>
+                    <li><a href="index.html#market">Target Users</a></li>
+                    <li><a href="index.html#value">Why GABAY</a></li>
+                    <li><a href="index.html#testimonials">Testimonials</a></li>
+                    <li><a href="index.html#faq">FAQ</a></li>
+                    <li><a href="order.html">Order Now</a></li>
+                </ul>
+            </div>
+
+            <!-- COL 3: Location -->
+            <div class="footer-col">
+                <h4 class="footer-col-title">Location</h4>
+                <div class="footer-location">
+                    <div class="footer-loc-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <p>Panabo City, Davao del
+                        Norte<br>Philippines, 8105</p>
+                </div>
+                <div class="footer-map-badge">
+                    <i class="fa-solid fa-paper-plane"></i>
+                    Region XI – Davao Region
+                </div>
+            </div>
+
+            <!-- COL 4: Contact -->
+            <div class="footer-col">
+                <h4 class="footer-col-title">Contact Us</h4>
+                <ul class="footer-contact-list">
+                    <li>
+                        <div class="fc-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <span class="fc-label">Email</span>
+                            <a href="mailto:techtalk.gabay@dnsc.edu.ph">techtalk.gabay@dnsc.edu.ph</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="fc-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div>
+                            <span class="fc-label">Phone</span>
+                            <a href="tel:+63XXXXXXXXXX">+63 (9XX) XXX-XXXX</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="fc-icon">
+                            <i class="fa-solid fa-clock"></i>
+                        </div>
+                        <div>
+                            <span class="fc-label">Office Hours</span>
+                            <span>Mon – Fri, 8:00 AM – 5:00 PM</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="footer-bottom-inner">
+                <p>© 2026 <strong>TechTalk</strong> · GABAY Smart Cane · Panabo City, Davao del Norte · All rights
+                    reserved.</p>
+
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Hamburger menu
+        const hamburger = document.getElementById('hamburger');
+        const navLinks = document.getElementById('navLinks');
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('open');
+        });
+        navLinks.querySelectorAll('a').forEach(a => {
+            a.addEventListener('click', () => navLinks.classList.remove('open'));
+        });
+        // textblock
+        function showAbout(id) {
+            document.querySelectorAll('.about-text').forEach(p => {
+                p.classList.remove('active');
+            });
+
+            document.getElementById(id).classList.add('active');
+        }
+        // mission/vission reveal
+        function showMV(id, btn) {
+
+            // remove active from all tabs
+            document.querySelectorAll('.mv-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+
+            // remove active from all contents
+            document.querySelectorAll('.mv-content').forEach(content => {
+                content.classList.remove('active');
+            });
+
+            // activate clicked tab
+            btn.classList.add('active');
+
+            // show matching content
+            document.getElementById(id).classList.add('active');
+        }
+
+        // About Card
+
+
+        const slides = document.querySelectorAll(".about-slide");
+        let current = 0;
+
+        function showNextSlide() {
+
+            const currentSlide = slides[current];
+
+            // exit animation
+            currentSlide.classList.add("exit");
+            currentSlide.classList.remove("active");
+
+            // next index
+            current = (current + 1) % slides.length;
+
+            const nextSlide = slides[current];
+
+            // reset next slide position
+            nextSlide.classList.remove("exit");
+
+            // small delay for smooth bottom entry
+            setTimeout(() => {
+                nextSlide.classList.add("active");
+            }, 200);
+        }
+
+        // start loop every 3 seconds
+        setInterval(showNextSlide, 3000);
+
+        // Scroll reveal
+        const reveals = document.querySelectorAll('.reveal');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, i) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => entry.target.classList.add('visible'), 80);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+        reveals.forEach(el => observer.observe(el));
+
+        // FAQ toggle
+        function toggleFaq(btn) {
+            const answer = btn.nextElementSibling;
+            const isOpen = answer.classList.contains('open');
+            document.querySelectorAll('.faq-a').forEach(a => a.classList.remove('open'));
+            document.querySelectorAll('.faq-q').forEach(b => b.classList.remove('open'));
+            if (!isOpen) {
+                answer.classList.add('open');
+                btn.classList.add('open');
+            }
+        }
+
+        // Form submit
+        function handleSubmit(e) {
+            e.preventDefault();
+            const btn = e.target.querySelector('.btn-submit');
+            btn.textContent = 'Sending...';
+            btn.disabled = true;
+            setTimeout(() => {
+                document.getElementById('formSuccess').style.display = 'block';
+                btn.textContent = 'Sent ✓';
+            }, 1200);
+        }
+
+        // Nav shadow on scroll
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('navbar');
+            nav.style.boxShadow = window.scrollY > 20 ? '0 2px 20px rgba(0,0,0,0.08)' : 'none';
+        });
+    </script>
+</body>
+
+</html>
