@@ -16,18 +16,34 @@
 <body>
 
     <!--------------------------- NAV --------------------------->
-    <nav id="navbar">
+       <nav id="navbar">
         <a href="#home" class="nav-logo">
             <img src="images/GABAY_Logo.png" alt="GABAY Logo" class="nav-logo-img">
             <span>GABAY</span>
         </a>
-        <ul class="nav-links" id="navLinks">
+
+        <!-- DESKTOP MENU -->
+        <ul class="nav-links" id="navLinksDesktop">
             <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#product">Product</a></li>
             <li><a href="#contact">Contact Us</a></li>
             <li><a href="order.html" class="nav-cta">Order Now</a></li>
         </ul>
+
+        <!-- MOBILE DRAWER -->
+        <div class="nav-drawer" id="navLinks">
+            <button class="close-btn" id="closeNav" aria-label="Close menu">✕</button>
+
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#product">Product</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+                <li><a href="order.html" class="nav-cta">Order Now</a></li>
+            </ul>
+        </div>
+
         <button class="hamburger" id="hamburger" aria-label="Toggle menu">
             <span></span><span></span><span></span>
         </button>
@@ -751,14 +767,26 @@
     </footer>
 
     <script>
-        // Hamburger menu
+           // Hamburger menu
         const hamburger = document.getElementById('hamburger');
-        const navLinks = document.getElementById('navLinks');
+        const navDrawer = document.getElementById('navLinks');
+        const closeBtn = document.getElementById('closeNav');
+
         hamburger.addEventListener('click', () => {
-            navLinks.classList.toggle('open');
+            navDrawer.classList.toggle('open');
+            hamburger.classList.toggle('open');
         });
-        navLinks.querySelectorAll('a').forEach(a => {
-            a.addEventListener('click', () => navLinks.classList.remove('open'));
+
+        closeBtn.addEventListener('click', () => {
+            navDrawer.classList.remove('open');
+            hamburger.classList.remove('open');
+        });
+
+        document.querySelectorAll('.nav-drawer a').forEach(a => {
+            a.addEventListener('click', () => {
+                navDrawer.classList.remove('open');
+                hamburger.classList.remove('open');
+            });
         });
         // textblock
         function showAbout(id) {
