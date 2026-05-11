@@ -460,7 +460,7 @@
     /* FLOATING STATS CARD */
     .hero-stats-card {
         position: absolute;
-        bottom: -15.5rem;
+        bottom: -15.3rem;
         left: 23rem;
         transform: translateX(-50%);
         width: 90%;
