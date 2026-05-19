@@ -240,11 +240,10 @@ nav {
 }
 
 .price-main {
-    font-family: 'Syne', sans-serif;
-    font-size: 2.6rem;
+    font-family: sans-serif;
+    font-size: 3.5rem;
     font-weight: 800;
     color: white;
-    margin-top: 1rem;
     margin-bottom: 1.5rem;
 }
 
